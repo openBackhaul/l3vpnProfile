@@ -20,6 +20,9 @@ Technology specific profile definition for Layer 3 Virtual Private Networks
 - Tobias Kratzl (Tobias.Kratzl@openBackhaul.com)
 - [L3vpnProfile_1.0.0-tsp.190514.1230+gendoc.1](./L3vpnProfile_1.0.0-tsp.190514.1230+gendoc.1.docx)
 
+### Augmentation Condition
+- When statement in Augmentation statement demands for Profile::profileName==PROFILE_NAME_TYPE_L3VPN
+
 ### YANG File
 - to be provided 
 
