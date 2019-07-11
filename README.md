@@ -21,7 +21,7 @@ Technology specific profile definition for Layer 3 Virtual Private Networks
 - [L3vpnProfile_1.0.0-tsp.190514.1230+gendoc.1](./L3vpnProfile_1.0.0-tsp.190514.1230+gendoc.1.docx)
 
 ### Augmentation Condition
-- When statement in Augmentation statement demands for Profile::profileName==PROFILE_NAME_TYPE_L3VPN
+- When statement in Augmentation statement demands for Profile::profileName==PROFILE_NAME_TYPE_L3VPN_PROFILE
 
 ### YANG File
 - to be provided 
