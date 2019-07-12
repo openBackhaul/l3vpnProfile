@@ -40,7 +40,7 @@ Technology specific profile definition for Layer 3 Virtual Private Networks
 
 ### Open Issue List
 - Tobias Kratzl (Tobias.Kratzl@openBackhaul.com)
-- [ipInterface/issues](../../issues)
+- [l3vpnProfile/issues](../../issues)
 
 ### Comments
 ./.
