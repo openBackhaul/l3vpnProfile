@@ -7,18 +7,18 @@ Technology specific profile definition for Layer 3 Virtual Private Networks
 
 ### UML
 - Tobias Kratzl (Tobias.Kratzl@openBackhaul.com)
-- [L3vpnProfile_1.0.0-tsp.190514.1230](./L3vpnProfile_1.0.0-tsp.190514.1230.zip)
+- [L3vpnProfile_1.0.0-tsp.190712.1250](./L3vpnProfile_1.0.0-tsp.190712.1250.zip)
 
 ### Overview 
 - Tobias Kratzl (Tobias.Kratzl@openBackhaul.com)
-- [L3vpnProfile_1.0.0-tsp.190514.1230+overview.1](./L3vpnProfile_1.0.0-tsp.190514.1230+overview.1.png)
+- [L3vpnProfile_1.0.0-tsp.190712.1250+overview.1](./L3vpnProfile_1.0.0-tsp.190712.1250+overview.1.png)
 
 ### List of Classes
 - to be provided 
 
 ### GenDoc Export
 - Tobias Kratzl (Tobias.Kratzl@openBackhaul.com)
-- [L3vpnProfile_1.0.0-tsp.190514.1230+gendoc.1](./L3vpnProfile_1.0.0-tsp.190514.1230+gendoc.1.docx)
+- [L3vpnProfile_1.0.0-tsp.190712.1250+gendoc.1](./L3vpnProfile_1.0.0-tsp.190712.1250+gendoc.1.docx)
 
 ### Augmentation Condition
 - When statement in Augmentation statement demands for Profile::profileName==PROFILE_NAME_TYPE_L3VPN_PROFILE
