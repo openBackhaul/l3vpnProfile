@@ -25,7 +25,7 @@ Technology specific profile definition for Layer 3 Virtual Private Networks
 
 ### YANG File
 - Waseem Sattar (Waseem.Sattar@openBackhaul.com)
-- [L3vpnProfile_1.0.0-tsp.190712.1250+yang.1](./L3vpnProfile_1.0.0-tsp.190712.1250+yang.1.zip)
+- [L3vpnProfile_1.0.0-tsp.190712.1250+yang.2](./L3vpnProfile_1.0.0-tsp.190712.1250+yang.2.zip)
 
 ### Interface Simulator
 - not planned 
