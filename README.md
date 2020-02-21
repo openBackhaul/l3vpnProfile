@@ -1,46 +1,41 @@
 # l3vpnProfile
-Technology specific profile definition for Layer 3 Virtual Private Networks
+- Technology specific profile definition for Layer 3 Virtual Private Networks
+- Tobias Kratzl (Tobias.Kratzl@openBackhaul.com)
 
 ### Branch
-- Tobias Kratzl (Tobias.Kratzl@openBackhaul.com)
 - 1.0.0-tsp.d.t : Use case driven model for the Transport SDN Pilot at Telefonica Germany
 
 ### UML
-- Tobias Kratzl (Tobias.Kratzl@openBackhaul.com)
-- [L3vpnProfile_1.0.0-tsp.190712.1250](./L3vpnProfile_1.0.0-tsp.190712.1250.zip)
+- [L3vpnProfile_1.0.0-tsp.200127.1640](./L3vpnProfile_1.0.0-tsp.200127.1640.zip)
 
 ### Overview 
-- Tobias Kratzl (Tobias.Kratzl@openBackhaul.com)
-- [L3vpnProfile_1.0.0-tsp.190712.1250+overview.1](./L3vpnProfile_1.0.0-tsp.190712.1250+overview.1.png)
-
-### List of Classes
-- to be provided 
+- [L3vpnProfile_1.0.0-tsp.200127.1640+overview.1](./L3vpnProfile_1.0.0-tsp.200127.1640+overview.1.png)
 
 ### GenDoc Export
-- Tobias Kratzl (Tobias.Kratzl@openBackhaul.com)
-- [L3vpnProfile_1.0.0-tsp.190712.1250+gendoc.1](./L3vpnProfile_1.0.0-tsp.190712.1250+gendoc.1.docx)
+- [L3vpnProfile_1.0.0-tsp.200127.1640+gendoc.1](./L3vpnProfile_1.0.0-tsp.200127.1640+gendoc.1.docx)
 
 ### Augmentation Condition
 - When statement in Augmentation statement demands for Profile::profileName==PROFILE_NAME_TYPE_L3VPN_PROFILE
 
 ### YANG File
-- Waseem Sattar (Waseem.Sattar@openBackhaul.com)
-- [L3vpnProfile_1.0.0-tsp.190712.1250+yang.2](./L3vpnProfile_1.0.0-tsp.190712.1250+yang.2.zip)
+- [L3vpnProfile_1.0.0-tsp.200127.1640+yang.2](./L3vpnProfile_1.0.0-tsp.200127.1640+yang.2.zip)
+
+### JSON Schema
+- to be provided
 
 ### Interface Simulator
-- not planned 
+- to be provided
 
 ### Interface Validator
-- not planned
+- to be provided
 
 ### Publication
-- not planned
+- Candidate for ONF TR-532 v2.0 
 
-### Model Classification
-- Trial
+### Aspired Model Classification
+- Live Network
 
 ### Open Issue List
-- Tobias Kratzl (Tobias.Kratzl@openBackhaul.com)
 - [l3vpnProfile/issues](../../issues)
 
 ### Comments
