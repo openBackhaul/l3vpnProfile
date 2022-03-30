@@ -6,13 +6,16 @@
 - 1.0.0-tsp.d.t : Use case driven model for the Transport SDN Pilot at Telefonica Germany
 
 ### UML
-- [L3vpnProfile_1.0.0-tsp.200127.1640](./L3vpnProfile_1.0.0-tsp.200127.1640.zip)
+- [L3vpnProfile_1.0.0-tsp.200127.1640](./L3vpnProfile_1.0.0-tsp.200127.1640.zip) (deprecated)
+- [L3vpnProfile_1.0.0-tsp.220330.1910](./L3vpnProfile_1.0.0-tsp.220330.1910.zip)
 
 ### Overview 
-- [L3vpnProfile_1.0.0-tsp.200127.1640+overview.1](./L3vpnProfile_1.0.0-tsp.200127.1640+overview.1.png)
+- [L3vpnProfile_1.0.0-tsp.200127.1640+overview.1](./L3vpnProfile_1.0.0-tsp.200127.1640+overview.1.png) (deprecated)
+- [L3vpnProfile_1.0.0-tsp.220330.1910+overview.1](./L3vpnProfile_1.0.0-tsp.220330.1910+overview.1.png)
 
 ### GenDoc Export
-- [L3vpnProfile_1.0.0-tsp.200127.1640+gendoc.1](./L3vpnProfile_1.0.0-tsp.200127.1640+gendoc.1.docx)
+- [L3vpnProfile_1.0.0-tsp.200127.1640+gendoc.1](./L3vpnProfile_1.0.0-tsp.200127.1640+gendoc.1.docx) (deprecated)
+- [L3vpnProfile_1.0.0-tsp.220330.1910+gendoc.1](./L3vpnProfile_1.0.0-tsp.220330.1910+gendoc.1.docx)
 
 ### Augmentation Condition
 - When statement in Augmentation statement demands for Profile::profileName==PROFILE_NAME_TYPE_L3VPN_PROFILE
