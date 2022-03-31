@@ -22,6 +22,7 @@
 
 ### YANG File
 - [L3vpnProfile_1.0.0-tsp.200127.1640+yang.2](./L3vpnProfile_1.0.0-tsp.200127.1640+yang.2.zip) (deprecated)
+- [L3vpnProfile_1.0.0-tsp.220330.1910+yang.1](./L3vpnProfile_1.0.0-tsp.220330.1910+yang.1.zip)
 
 ### JSON Schema
 - to be provided
