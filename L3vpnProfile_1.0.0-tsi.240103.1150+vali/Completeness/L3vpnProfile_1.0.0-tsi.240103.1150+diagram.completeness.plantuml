@@ -1,0 +1,92 @@
+@startuml L3vpnProfile_1.0.0-tsi.240103.1150+diagram.completeness
+skinparam responseMessageBelowArrow true
+
+title
+L3vpnProfile_1.0.0-tsi.240104.1835+diagram.completeness
+end title
+
+participant "Postman" as Postman
+participant "Collection" as Collection
+participant "../profile-collection" as ProfileCollection
+participant "../l-3vpn-profile-capability" as Capability
+participant "../l-3vpn-profile-configuration" as Configuration
+participant "../createL3vpnProfile" as CreateRpc
+participant "../modifyL3vpnProfile" as ModifyRpc
+participant "../deleteL3vpnProfile" as DeleteRpc
+
+activate Postman
+
+group Preparation
+  Postman --\\o Collection : mountName
+
+  Postman -> ProfileCollection
+  Postman <-- ProfileCollection : {(uuid, profileName)}
+  note right Postman
+    filter for
+    L3vpnProfile
+  end note
+  Postman --\\o Collection : L3vpnProfileUuid
+end
+
+group Capability Validation
+Collection --\\o Postman : L3vpnProfileUuid
+  Postman -> Capability : {L3vpnProfileUuid}
+  Postman <-- Capability : {capabilites}
+  note right Postman
+    schema validation
+  end note
+end
+
+group Configuration Validation
+  Collection --\\o Postman : L3vpnProfileUuid
+  Postman -> Configuration : {L3vpnProfileUuid}
+  Postman <-- Configuration : {configuration}
+  note right Postman
+    schema validation
+  end note
+end
+
+group Create RPC
+  Collection --\\o Postman : L3vpnProfileUuid
+  Postman -> CreateRpc : {creationInput}
+  Postman <-- CreateRpc : {createdL3vpnProfileUuid}
+  note right Postman
+    schema validation
+  end note
+  Postman --\\o Collection : createdL3vpnProfileUuid,\n creationInput
+  Collection --\\o Postman : createdL3vpnProfileUuid,\n creationInput
+  Postman -> Configuration : {createdL3vpnProfileUuid}
+  Postman <-- Configuration : {createdConfiguration}
+  note right Postman
+    createdConfiguration==creationInput?
+  end note
+end
+
+group Modify RPC
+  Collection --\\o Postman : createdL3vpnProfileUuid
+  Postman -> ModifyRpc : {existingL3vpnProfile=createdL3vpnProfileUuid, modificationInput}
+  Postman <-- ModifyRpc : 204
+  note right Postman
+    response==204?
+  end note
+  Postman --\\o Collection : modificationInput
+  Collection --\\o Postman : createdL3vpnProfileUuid,\n modificationInput
+  Postman -> Configuration : {createdL3vpnProfileUuid}
+  Postman <-- Configuration : {modifiedConfiguration}
+  note right Postman
+    modifiedConfiguration==modificationInput?
+  end note
+end
+
+group Delete RPC
+  Collection --\\o Postman : createdL3vpnProfileUuid
+  Postman -> DeleteRpc : {obsoleteL3vpnProfile=createdL3vpnProfileUuid}
+  Postman <-- DeleteRpc : 204
+  note right Postman
+    response==204?
+  end note
+end
+
+deactivate Postman
+
+@enduml

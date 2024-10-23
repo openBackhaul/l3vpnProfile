@@ -16,23 +16,23 @@
 ### Augmentation Condition
 - When statement in Augmentation statement demands for Profile::profileName==PROFILE_NAME_TYPE_L3VPN_PROFILE
 
-### YANG File
-- [L3vpnProfile_1.0.0-tsi.240103.1150+yang.1](./L3vpnProfile_1.0.0-tsi.240103.1150+yang.1.zip)
+### YANG File  
+- [L3vpnProfile_1.0.0-tsi.240103.1150+yang.1](./L3vpnProfile_1.0.0-tsi.240103.1150+yang/l-3vpn-profile-1-0.yang)  
 
-### JSON Schema
-- to be provided
+### JSON and YAML Schemas  
+- [L3vpnProfile_1.0.0-tsi.240103.1150+schema](./L3vpnProfile_1.0.0-tsi.240103.1150+schema/)  
 
-### Interface Simulator
-- to be provided
+### Interface Simulator  
+- [L3vpnProfile_1.0.0-tsi.240103.1150+simulator](./L3vpnProfile_1.0.0-tsi.240103.1150+simu/)  
 
-### Interface Validator
-- to be provided
+### Interface Validator  
+- [L3vpnProfile_1.0.0-tsi.240103.1150+validator](./L3vpnProfile_1.0.0-tsi.240103.1150+vali/)  
 
-### Publication
-- Candidate for ONF TR-532 v2.0 
+### Publication  
+- Published as a part of ONF TR-532 v2.0  
 
-### Aspired Model Classification
-- Live Network
+### Model Classification  
+- Operational in Live Network  
 
 ### Open Issue List
 - [l3vpnProfile/issues](../../issues)

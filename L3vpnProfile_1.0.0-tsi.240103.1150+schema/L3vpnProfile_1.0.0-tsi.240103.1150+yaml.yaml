@@ -1,0 +1,149 @@
+/profile-collection/profile={uuid}/l-3vpn-profile-1-0:l-3vpn-profile-pac/l-3vpn-profile-capability:
+  type: object
+  required:
+    - l-3vpn-profile-1-0:l-3vpn-profile-capability
+  properties:
+    l-3vpn-profile-1-0:l-3vpn-profile-capability:
+      type: object
+      required:
+        - profile-naming-is-avail
+        - l-3vpn-based-on-ip-v-6-is-avail
+      properties:
+        profile-naming-is-avail:
+          type: boolean
+        l-3vpn-based-on-ip-v-6-is-avail:
+          type: boolean
+
+/profile-collection/profile={uuid}/l-3vpn-profile-1-0:l-3vpn-profile-pac/l-3vpn-profile-configuration:
+  type: object
+  required:
+    - l-3vpn-profile-1-0:l-3vpn-profile-configuration
+  properties:
+    l-3vpn-profile-1-0:l-3vpn-profile-configuration:
+      type: object
+      required:
+        - external-label
+        - l-3vpn-description
+        - l-3vpn-configuration-list
+      properties:
+        external-label:
+          type: string
+        l-3vpn-description:
+          type: string
+        l-3vpn-configuration-list:
+          type: array
+          minItems: 1
+          maxItems: 2
+          x-key: label-mode
+          items:
+            type: object
+            required:
+              - label-mode
+              - route-distinguisher
+              - route-target-import-list
+              - route-target-export-list
+              - address-family
+            properties:
+              label-mode:
+                type: string
+                enum:
+                  - 'l-3vpn-profile-1-0:LABEL_MODE_TYPE_PER_INSTANCE'
+                  - 'l-3vpn-profile-1-0:LABEL_MODE_TYPE_PER_ROUTE'
+              route-distinguisher:
+                type: object
+                required:
+                  - vpn-number
+                  - device-identifier-kind
+                  - loop-back-ip-address
+                  - as-number
+                properties:
+                  vpn-number:
+                    type: integer
+                    format: uint32
+                  device-identifier-kind:
+                    type: string
+                    enum:
+                      - 'l-3vpn-profile-1-0:DEVICE_IDENTIFIER_KIND_TYPE_LOOP_BACK_IP_ADDRESS'
+                      - 'l-3vpn-profile-1-0:DEVICE_IDENTIFIER_KIND_TYPE_AS_NUMBER'
+                      - 'l-3vpn-profile-1-0:DEVICE_IDENTIFIER_KIND_TYPE_NOT_YET_DEFINED'
+                  loop-back-ip-address:
+                    type: string
+                  as-number:
+                    type: integer
+                    format: uint32
+              route-target-import-list:
+                type: array
+                minItems: 1
+                x-key: vpn-number
+                items:
+                  type: object
+                  required:
+                    - vpn-number
+                    - device-identifier-kind
+                    - loop-back-ip-address
+                    - as-number
+                  properties:
+                    vpn-number:
+                      type: integer
+                      format: uint32
+                    device-identifier-kind:
+                      type: string
+                      enum:
+                        - 'l-3vpn-profile-1-0:DEVICE_IDENTIFIER_KIND_TYPE_LOOP_BACK_IP_ADDRESS'
+                        - 'l-3vpn-profile-1-0:DEVICE_IDENTIFIER_KIND_TYPE_AS_NUMBER'
+                        - 'l-3vpn-profile-1-0:DEVICE_IDENTIFIER_KIND_TYPE_NOT_YET_DEFINED'
+                    loop-back-ip-address:
+                      type: string
+                    as-number:
+                      type: integer
+                      format: uint32
+              route-target-export-list:
+                type: array
+                minItems: 1
+                x-key: vpn-number
+                items:
+                  type: object
+                  required:
+                    - vpn-number
+                    - device-identifier-kind
+                    - loop-back-ip-address
+                    - as-number
+                  properties:
+                    vpn-number:
+                      type: integer
+                      format: uint32
+                    device-identifier-kind:
+                      type: string
+                      enum:
+                        - 'l-3vpn-profile-1-0:DEVICE_IDENTIFIER_KIND_TYPE_LOOP_BACK_IP_ADDRESS'
+                        - 'l-3vpn-profile-1-0:DEVICE_IDENTIFIER_KIND_TYPE_AS_NUMBER'
+                        - 'l-3vpn-profile-1-0:DEVICE_IDENTIFIER_KIND_TYPE_NOT_YET_DEFINED'
+                    loop-back-ip-address:
+                      type: string
+                    as-number:
+                      type: integer
+                      format: uint32
+              address-family:
+                type: string
+                enum:
+                  - 'l-3vpn-profile-1-0:ADDRESS_FAMILY_TYPE_IPV4-FAMILY'
+                  - 'l-3vpn-profile-1-0:ADDRESS_FAMILY_TYPE_IPV6-FAMILY'
+                  - 'l-3vpn-profile-1-0:ADDRESS_FAMILY_TYPE_UNKNOWN'
+                  - 'l-3vpn-profile-1-0:ADDRESS_FAMILY_TYPE_NOT_YET_DEFINED'
+
+/l-3vpn-profile-1-0:create-l-3vpn-profile:
+  type: object
+  required:
+    - l-3vpn-profile-1-0:output
+  properties:
+    l-3vpn-profile-1-0:output:
+      type: object
+      required:
+        - created-l-3vpn-profile
+      properties:
+        created-l-3vpn-profile:
+          type: string
+
+/l-3vpn-profile-1-0:modify-l-3vpn-profile:
+
+/l-3vpn-profile-1-0:delete-l-3vpn-profile:
